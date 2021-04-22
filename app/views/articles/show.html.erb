@@ -1,0 +1,7 @@
+<div style="padding-left: 48px">
+  <h3><%= @article.title %></h3>
+  <p><%= @article.content %></p>
+  <h4><%= link_to "edit", edit_article_path(@article) %></h4>
+  <h4><%= link_to "delete", article_path(@article), method: :delete, data: { confirm: "Are you sure?" } %></h4>
+  <h4><%= link_to "back", articles_path %></h4>
+</div>
